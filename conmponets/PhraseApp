@@ -1,0 +1,5 @@
+import PhraseApp from "@/components/PhraseApp";
+
+export default function Home() {
+  return <PhraseApp />;
+}
