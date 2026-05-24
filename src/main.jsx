@@ -1,7 +1,7 @@
-import PhraseApp from "../components/PhraseApp";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import PhraseApp from '../components/PhraseApp'
 
-function App() {
-  return <PhraseApp />;
-}
-
-export default App;
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <PhraseApp />
+)
