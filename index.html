@@ -263,7 +263,35 @@ footer a{color:var(--blue);}
     <p style="font-size:11px;color:rgba(255,255,255,.5)">令和6〜7年度 しずおか中部連携中枢都市圏地域課題解決事業<br>
     参考：張盛開・何俊文（漢使研）2025「外国人住民の住みやすさ向上」成果報告書：27-33</p>
   </div>
+import Image from "next/image";
 
+export default function Home() {
+  return (
+    <main>
+      {/* 既存コンテンツ */}
+
+      {/* ▼ 追加セクション */}
+      <section style={{ padding: "60px 20px", textAlign: "center" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>
+          地域との連携
+        </h2>
+
+        <p style={{ marginBottom: "30px" }}>
+          川根本町町長と漢使研の交流を通じて、
+          地域文化の継承と発信に取り組んでいます。
+        </p>
+
+        <Image
+          src="/kawanechocho_kanshiken.jpg"
+          alt="川根本町町長と漢使研"
+          width={800}
+          height={500}
+          style={{ borderRadius: "12px" }}
+        />
+      </section>
+    </main>
+  );
+}
   <div class="about-block">
     <h3>🗓️ フィールドワーク記録</h3>
     <p><strong style="color:#7eb8e8">FW1（2024年10月20日）</strong><br>
